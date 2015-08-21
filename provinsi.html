@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA | Morris.js Charts</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- orris -->
+    <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Adhiguna</strong>
+                             </span> <span class="text-muted text-xs block">Admin Provinsi <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="mailbox.html">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li>
+                    <a href="index.html"><span class="nav-label">Dashboards</span></a>
+                </li>
+                <li class="active">
+                    <a href="provinsi.html"><span class="nav-label">Provinsi</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a7.jpg">
+                                </a>
+                                <div class="media-body">
+                                    <small class="pull-right">46h ago</small>
+                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a4.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right text-navy">5h ago</small>
+                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/profile.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right">23h ago</small>
+                                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html">
+                                    <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="profile.html">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="grid_options.html">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i> Log out
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInRight" >
+          <div class="row">
+            <div class="col-md-8">
+              <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Jumlah Stok Sembako<small>&nbsp;Dalam Ton.</small></h5>
+                    <div class="ibox-tools">
+                      <div class="btn-group">
+                        <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">Sulawesi Selatan <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Jawa Barat</a></li>
+                          <li><a href="#">DKI Jakarta</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <div class="ibox-content" style="position: relative">
+                    <div id="morris-area-chart"></div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                  <h5>
+                    Sembako Tiap Provinsi<small>&nbsp;Jum'at, 21 Agustus 2015</small>
+                  </h5>
+                  <div class="ibox-tools">
+                    <div class="btn-group">
+                      <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">Beras <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Daging</a></li>
+                        <li><a href="#">Ayam</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="ibox-content">
+                    <table class="table table-hover no-margins">
+                        <thead>
+                        <tr>
+                            <th>Provinsi</th>
+                            <th>Produksi(Ton)</th>
+                            <th>Konsumsi(Ton)</th>
+                            <th>Stok(Ton)</th>
+                            <th>Harga per kg(Rp)</th>
+                            <th>Kondisi</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><small>Jawa Barat</small></td>
+                            <td>100</td>
+                            <td>30</td>
+                            <td>400</td>
+                            <td>10.000</td>
+                            <td><span class="label label-success">Normal</span></td>
+                        </tr>
+                        <tr>
+                            <td><small>DKI Jakarta</small></td>
+                            <td>1</td>
+                            <td>100</td>
+                            <td>80</td>
+                            <td class="text-navy"><span data-toggle="tooltip" data-placement="top" title="Turun Rp150">13.000</span></td>
+                            <td><span class="label label-warning">Warning</span></td>
+                        </tr>
+                        <tr>
+                            <td><small>Sulawesi Selatan</small></td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>80</td>
+                            <td class="text-danger"><span data-toggle="tooltip" data-placement="top" title="Naik Rp400">10.000</span></td>
+                            <td><span class="label label-danger">Danger</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Live Laporan Harian</h5>
+                    </div>
+                    <div class="ibox-content">
+
+                        <div>
+                            <div class="feed-activity-list">
+                              <div class="feed-element">
+                                <div class="media-body">
+                                  <small class="pull-right">5m ago</small>
+                                  <strong>Provinsi Jawa Barat</strong> <span class="text-navy">Surplus Beras</span><br>
+                                  <small class="text-muted">Today 5:60 pm - 12.06.2014</small>
+                                </div>
+                              </div>
+                              
+                              <div class="feed-element">
+                                <div class="media-body">
+                                  <small class="pull-right">5m ago</small>
+                                  <strong>Provinsi Sulawesi Selatan</strong> <span class="text-danger">Gagal Panen</span><br>
+                                  <small class="text-muted">Today 5:60 pm - 12.06.2014</small>
+                                </div>
+                              </div>
+                              
+                              <div class="feed-element">
+                                <div class="media-body">
+                                  <small class="pull-right">5m ago</small>
+                                  <strong>Provinsi DKI Jakarta</strong> <span class="text-warning">Minus Daging</span><br>
+                                  <small class="text-muted">Today 5:60 pm - 12.06.2014</small>
+                                </div>
+                              </div>
+                            </div>
+
+                            <button class="btn btn-primary btn-block m-t"><i class="fa fa-arrow-down"></i> Show More</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="clearfix">
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+            <div>
+                <strong>Copyright</strong> Example Company &copy; 2014-2015
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Morris -->
+    <script src="js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="js/plugins/morris/morris.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- Morris demo data-->
+    <script type="text/javascript">
+      Morris.Area({
+          element: 'morris-area-chart',
+          data: [{ period: '2015-01-01', Beras: 2666, Daging: 1000, Ayam: 2647 },
+              { period: '2015-02-01', Beras: 2778, Daging: 2294, Ayam: 2441 },
+              { period: '2015-03-01', Beras: 4912, Daging: 1969, Ayam: 2501 },
+              { period: '2015-04-01', Beras: 3767, Daging: 3597, Ayam: 5689 },
+              { period: '2015-05-01', Beras: 6810, Daging: 1914, Ayam: 2293 },
+              { period: '2015-06-01', Beras: 5670, Daging: 4293, Ayam: 1881 },
+              { period: '2015-07-01', Beras: 4820, Daging: 3795, Ayam: 1588 },
+              { period: '2015-08-01', Beras: 15073, Daging: 5967, Ayam: 5175 },
+              { period: '2015-09-01', Beras: 10687, Daging: 4460, Ayam: 2028 },
+              { period: '2015-10-01', Beras: 8432, Daging: 5713, Ayam: 1791 } ],
+          xkey: 'period',
+          ykeys: ['Beras', 'Daging', 'Ayam'],
+          labels: ['Beras', 'Daging', 'Ayam'],
+          pointSize: 2,
+          hideHover: 'auto',
+          resize: true,
+          lineColors: ['#87d6c6', '#54cdb4','#1ab394'],
+          lineWidth:2,
+          pointSize:1,
+          xLabelAngle: 45
+      });
+      $('[data-toggle="tooltip"]').tooltip();
+    </script>
+
+</body>
+
+</html>
