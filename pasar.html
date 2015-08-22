@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lapor Pasar</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- orris -->
+    <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+          #map_pasar {
+            height: 300px;
+            width: 100%;
+          }
+        </style>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <ul class="nav" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element" style="color: white;">
+                  LAPOR PASAR
+                </div>
+                <div class="logo-element">
+                    LP
+                </div>
+            </li>
+            <li class="active">
+              <a href="pasar.html"><span class="nav-label">Home</span></a>
+            </li>
+            <li>
+              <a href="search_pasar.html"><span class="nav-label">Pasar</span></a>
+            </li>
+            <li>
+              <a href="search_mitra.html"><span class="nav-label">Mitra Toko</span></a>
+            </li>
+            <li>
+              <a href="search_pasar_produksi.html"><span class="nav-label">Pasar Produksi</span></a>
+            </li>
+        </ul>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+          <div class="wrapper wrapper-content animated fadeInRight" >
+            <div class="row">
+              <div class="col-md-9">
+                <div class="ibox float-e-margins">
+                  <div class="ibox-title">
+                      <h5>Harga Rata-rata Komoditas Nasional <small>Sabtu, 22 Agustus 2015</small></h5>
+                      <div class="ibox-tools">
+                        <div class="btn-group">
+                          <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">DKI Jakarta <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Sulawesi Selatan</a></li>
+                            <li><a href="#">Jawa Barat</a></li>
+                            <li><a href="#">DKI Jakarta</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="ibox-content" style="position: relative">
+                    <div class="row">
+                      <div class="col-xs-12 text-right">
+                        <div class="btn-group" role="group" aria-label="Large button group">
+                          <button type="button" class="btn btn-white"><i class="fa fa-chevron-left"></i></button>
+                          <button type="button" class="btn btn-white"><i class="fa fa-chevron-right"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <h4>Cabe Merah Besar</h4>
+                        <div class="col-md-4">
+                          <img src="http://infopangan.jakarta.go.id/media/komoditas/cabe-merah-besar.png" style="width: 100%;">
+                        </div>
+                        <div class="col-md-8">
+                          <b>Rp35.000/kg</b>
+                          <span class="label label-danger">Harga Naik Rp3.000</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <h4>Daging Sapi Paha Belakang</h4>
+                        <div class="col-md-4">
+                          <img src="http://infopangan.jakarta.go.id/media/komoditas/daging-sapi-paha-belakang.png" style="width: 100%;">
+                        </div>
+                        <div class="col-md-8">
+                          <b>Rp120.000/kg</b>
+                          <span class="label label-primary">Harga Turun Rp8</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <h4>Daging Sapi Murni</h4>
+                        <div class="col-md-4">
+                          <img src="http://infopangan.jakarta.go.id/media/komoditas/daging-sapi-murni.png" style="width: 100%;">
+                        </div>
+                        <div class="col-md-8">
+                          <b>Rp110.000/kg</b>
+                          <span class="label label-primary">Harga Turun Rp8</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <h4>Ayam Broiler/Ras</h4>
+                        <div class="col-md-4">
+                          <img src="http://infopangan.jakarta.go.id/media/komoditas/ayam-broiler-ras.png" style="width: 100%;">
+                        </div>
+                        <div class="col-md-8">
+                          <b>Rp36.000/kg</b>
+                          <span class="label label-danger">Harga naik Rp1.000</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <h4>Telur Ayam Ras</h4>
+                        <div class="col-md-4">
+                          <img src="http://infopangan.jakarta.go.id/media/komoditas/telur-ayam-ras.png" style="width: 100%;">
+                        </div>
+                        <div class="col-md-8">
+                          <b>Rp24.000/kg</b>
+                          <span class="label label-success">Harga Stabil</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <h4>Gula Pasir</h4>
+                        <div class="col-md-4">
+                          <img src="http://infopangan.jakarta.go.id/media/komoditas/gula-pasir.png" style="width: 100%;">
+                        </div>
+                        <div class="col-md-8">
+                          <b>Rp13.000/kg</b>
+                          <span class="label label-success">Harga Stabil</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <h4>Beras Medium</h4>
+                        <div class="col-md-4">
+                          <img src="http://infopangan.jakarta.go.id/media/komoditas/beras-medium.png" style="width: 100%;">
+                        </div>
+                        <div class="col-md-8">
+                          <b>Rp10.500/kg</b>
+                          <span class="label label-success">Harga Stabil</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <h4>Beras Pera</h4>
+                        <div class="col-md-4">
+                          <img src="http://infopangan.jakarta.go.id/media/komoditas/beras-pera.png" style="width: 100%;">
+                        </div>
+                        <div class="col-md-8">
+                          <b>Rp12.000/kg</b>
+                          <span class="label label-success">Harga Stabil</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <h4>Beras Premium</h4>
+                        <div class="col-md-4">
+                          <img src="http://infopangan.jakarta.go.id/media/komoditas/beras-premium.png" style="width: 100%;">
+                        </div>
+                        <div class="col-md-8">
+                          <b>Rp12.000/kg</b>
+                          <span class="label label-success">Harga Stabil</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="ibox float-e-margins">
+                  <div class="ibox-title">
+                      <h5>Pasar Nasional</h5>
+                      <div class="ibox-tools">
+                        <div class="btn-group">
+                          <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">DKI Jakarta <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Sulawesi Selatan</a></li>
+                            <li><a href="#">Jawa Barat</a></li>
+                            <li><a href="#">DKI Jakarta</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="ibox-content" style="position: relative">
+                    <div class="row">
+                      <div id="map_pasar">
+                      
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="ibox float-e-margins">
+                      <div class="ibox-title">
+                          <h5>Berita</h5>
+                      </div>
+                      <div class="ibox-content">
+
+                          <div>
+                              <div class="feed-activity-list">
+                                <div class="feed-element">
+                                  <div class="media-body">
+                                    <strong><a href="#">Kini DKI Punya Pusat Informasi Pangan Jakarta</a></strong><br>
+                                    <small class="text-muted">Today 7:60 pm - 22.08.2015</small>
+                                    <img style="width: 100%;" src="http://infopangan.jakarta.go.id/uploads/images/berita/05b4c441ea2c5708666cc1ce9b3a1a2b.jpg">
+                                  </div>
+                                </div>
+                              
+                                <div class="feed-element">
+                                  <div class="media-body">
+                                    <strong><a href="#">Gelar Rakor 2 Jam, CT Pastikan Harga Pangan Jelang Puasa Stabil</a></strong><br>
+                                    <small class="text-muted">Today 7:60 pm - 22.08.2015</small>
+                                    <img style="width: 100%;" src="http://infopangan.jakarta.go.id/uploads/images/berita/2-pasar-kramatjati-140119c.jpg">
+                                  </div>
+                                </div>
+                              
+                                <div class="feed-element">
+                                  <div class="media-body">
+                                    <strong><a href="#">KPPU: Makelar Ayam Potong Mulai Merajelala</a></strong><br>
+                                    <small class="text-muted">Today 7:60 pm - 22.08.2015</small>
+                                    <img style="width: 100%;" src="http://infopangan.jakarta.go.id/uploads/images/berita/6d6302663263be7dd3310bd1bd5a4186_L.jpg">
+                                  </div>
+                                </div>
+                              
+                                <div class="feed-element">
+                                  <div class="media-body">
+                                    <strong><a href="#">Sepekan Mendekati Ramadhan, Pasokan Ikan Aman</a></strong><br>
+                                    <small class="text-muted">Today 7:60 pm - 22.08.2015</small>
+                                    <img style="width: 100%;" src="http://infopangan.jakarta.go.id/uploads/images/berita/2088932089p.jpg">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <button class="btn btn-primary btn-block m-t"><i class="fa fa-arrow-down"></i> Show More</button>
+
+                          </div>
+
+                      </div>
+                  </div>
+                  <div class="clearfix">
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+              <div>
+                  <strong>Copyright</strong> Sabril Team &copy; 2014-2015
+              </div>
+          </div>
+
+          </div>
+        </div>
+
+
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Morris -->
+    <script src="js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="js/plugins/morris/morris.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script type="text/javascript">
+    var locations = [{"id":7,"name":"Pasar Grogol","address":"Jl. DR. Muwardi IV Kel. Grogol, Kec. Grogol Petamburan","city":"Jakarta Barat","postal_code":"11450","phone":"+62 21 5672487","fax":null,"email":null,"website":null,"latitude":-6.163798,"longitude":106.796635,"profile":null,"image_path":["pasar-grogol-1.jpg"]},{"id":8,"name":"Pasar Glodok","address":"Jl. Pancoran, Tamansari, Glodok","city":"Jakarta Barat","postal_code":"11120","phone":"+62 21 6344545","fax":"","email":"","website":"http:\/\/www.pasarglodok.com\/","latitude":-6.142307,"longitude":106.814119,"profile":"","image_path":["p18af9oe6b9092i319h0cae1j3c4.jpg","p18af9oe8p1vgb1i1a1sn8rl51h8n5.jpg"]},{"id":3,"name":"Pasar Senen Blok III - VI","address":"Jl. Pasar Senen Raya Kel. Senen, Kec. Senen","city":"Jakarta Pusat","postal_code":"10410","phone":"+62 21 4210411 \/ 42881877","fax":null,"email":null,"website":null,"latitude":-6.176417,"longitude":106.840836,"profile":"","image_path":["pasar-senen-1.jpg"]},{"id":4,"name":"Pasar Jembatan Merah","address":"Jl. Kartini Raya Kel. Mangga Dua Selatan, Kec. Sawah Besar","city":"Jakarta Pusat","postal_code":"10730","phone":"+62 21 6011584","fax":null,"email":null,"website":null,"latitude":-6.157494,"longitude":106.83631,"profile":null,"image_path":[]},{"id":9,"name":"Pasar Minggu","address":"Jl. Ragunan Raya Kel. Pasar Minggu, Kec. Pasar Minggu","city":"Jakarta Selatan","postal_code":"12730","phone":"+62 21 7803242","fax":null,"email":null,"website":null,"latitude":-6.28618,"longitude":106.831735,"profile":null,"image_path":[]},{"id":10,"name":"Pasar Mayestik","address":"Jl. Tebah III Kel. Gunung, Kec. Kebayoran Baru","city":"Jakarta Selatan","postal_code":"12120","phone":"+62 21 7209918 \/ 7222294","fax":null,"email":null,"website":null,"latitude":-6.239085,"longitude":106.791079,"profile":null,"image_path":["pasar-mayestik-2.jpg","pasar-mayestik-1.jpg"]},{"id":1,"name":"Pasar Induk Kramat Jati","address":"Jl. Raya Bogor Kampung Tengah, Kramat Jati","city":"Jakarta Timur","postal_code":"13540","phone":"+62 21 87788261","fax":"","email":"","website":"http:\/\/pasarindukkramatjati.com","latitude":-6.294542,"longitude":106.871626,"profile":"<ul>\n<li>Didirikan Pada: 28 Desember 1973<\/li>\n<li>Luas Area: 14.7 hektar<\/li>\n<li>Jumlah Tempat Usaha: 1.835<\/li>\n<li>Jumlah Pedagang: 1.000<\/li>\n<\/ul>","image_path":["pasar-induk-kramat-jati-1.jpg","pasar-induk-kramat-jati-2.jpg"]},{"id":2,"name":"Pasar Induk Beras Cipinang","address":"Jl. Pisangan Lama Kel. Pisangan Timur, Kec. Pulo Gadung","city":"Jakarta Timur","postal_code":"13230","phone":"+62 21 4723458","fax":"","email":"","website":"","latitude":-6.211973,"longitude":106.884752,"profile":"","image_path":["pasar-induk-cipinang-2.jpg","pasar-induk-cipinang-1.jpg"]},{"id":11,"name":"Pasar Pramuka","address":"Jl. Pramuka Raya Ps. Pramuka Kel. Pal Meriam, Kec. Matraman","city":"Jakarta Timur","postal_code":"13140","phone":"+62 21 8506428","fax":null,"email":null,"website":null,"latitude":-6.196678,"longitude":106.857887,"profile":null,"image_path":["pasar-pramuka-1.jpg","pasar-pramuka-2.jpg"]},{"id":12,"name":"Pasar Kramat Jati","address":"Jl. Raya Bogor KM.20 Kel. Kramat Jati, Kec. Kramat Jati","city":"Jakarta Timur","postal_code":"13510","phone":"+62 21 8092418 \/ 70797683","fax":null,"email":null,"website":null,"latitude":-6.268712,"longitude":106.866947,"profile":null,"image_path":["pasar-kramat-jati-1.jpg","pasar-kramat-jati-2.jpg"]},{"id":13,"name":"Pasar Jatinegara","address":"Jl. Matraman Raya Kel. Bali Mester, Kec. Jatinegara Timur","city":"Jakarta Timur","postal_code":"13930","phone":"+62 21 8191843 \/ 8519661","fax":null,"email":null,"website":null,"latitude":-6.203275,"longitude":106.856779,"profile":null,"image_path":["pasar-jatinegara-1.jpg","pasar-jatinegara-2.jpg"]},{"id":5,"name":"Pasar Sunter Podomoro","address":"Jl. Sunter Karya Utara II Kel. Sunter Agung, Kec. Tanjung Priok","city":"Jakarta Utara","postal_code":"14350","phone":"+62 21 6410286","fax":null,"email":null,"website":null,"latitude":-6.139915,"longitude":106.869473,"profile":null,"image_path":["pasar-sunter-1.jpg"]},{"id":6,"name":"Pasar Rawa Badak","address":"Jl. Anggrek, 006\/03 Kel. Rawa Badak Utara, Kec. Koja Utara","city":"Jakarta Utara","postal_code":"14230","phone":"+62 21 43935251","fax":null,"email":null,"website":null,"latitude":-6.11515,"longitude":106.895089,"profile":null,"image_path":[]}];
+
+    var map = new google.maps.Map(document.getElementById('map_pasar'), {
+      zoom: 10,
+      center: new google.maps.LatLng( -6.163798, 106.796635),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i]['latitude'], locations[i]['longitude']),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i]['name']);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+
+</body>
+
+</html>

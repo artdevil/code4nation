@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bulog Data Nasional</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- orris -->
+    <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      #map_pasar_detail {
+        height: 300px;
+        width: 100%;
+      }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element" style="color: white;">
+                      LAPOR PASAR
+                    </div>
+                    <div class="logo-element">
+                        LP
+                    </div>
+                </li>
+                <li>
+                  <a href="pasar.html"><span class="nav-label">Home</span></a>
+                </li>
+                <li>
+                  <a href="search_pasar.html"><span class="nav-label">Pasar</span></a>
+                </li>
+                <li class="active">
+                  <a href="search_mitra.html"><span class="nav-label">Mitra Toko</span></a>
+                </li>
+                <li>
+                  <a href="search_pasar_produksi.html"><span class="nav-label">Pasar Produksi</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    
+    <div id="page-wrapper" class="gray-bg">
+      <div class="row border-bottom">
+              <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+              <div class="navbar-header">
+                  <form role="search" class="navbar-form-custom" action="search_results.html">
+                      <div class="form-group">
+                          <input type="text" placeholder="Ketik nama mitra di sini ....." class="form-control" name="top-search" id="top-search">
+                      </div>
+                  </form>
+              </div>
+              </nav>
+      </div>
+      <div class="row wrapper border-bottom white-bg page-heading">
+          <div class="col-lg-12">
+              <h2>Toko Bagus <small>(Pasar Grogol)</small></h2>
+          </div>
+      </div>
+      <div class="wrapper wrapper-content animated fadeInRight" >
+        <div class="row">
+          <div class="col-md-3">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <img src="http://static1.squarespace.com/static/529e2535e4b030d6ab6bf3f5/553d7f4ae4b0fe84387476d6/553d8053e4b0b45c0774ec96/1430096217589/ImageHandler.jpeg" style="width: 100%; cursor: pointer;">
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <address>
+  									<strong>Alamat: </strong><br>
+  									<span id="market-address">Jl. DR. Muwardi IV Kel. Grogol, Kec. Grogol Petamburan, Jakarta Barat 11450</span><br>
+  									<div id="div-market-phone" style="">
+  										<abbr title="Telepon"><i class="icon-phone"></i></abbr>&nbsp; <span id="market-phone">+62 21 5672487</span>
+  									</div>
+  									<div id="div-market-fax" style="display: none;">
+  										<abbr title="Faksimile"><i class="icon-print"></i></abbr>&nbsp; <span id="market-fax"></span><br>
+  									</div>
+  									<div id="div-market-email" style="display: none;">
+  										<abbr title="Email"><i class="icon-envelope"></i></abbr>&nbsp; <a href="mailto:#"><span id="market-email"></span></a><br>
+  									</div>
+  									<div id="div-market-web" style="display: none;">
+  										<abbr title="Website"><i class="icon-globe"></i></abbr>&nbsp; <a href="http://pasarindukkramatjati.com/"><span id="market-web"></span></a>
+  									</div>
+  								</address>
+                  <div class="clearfix"></div>
+                  <h4 class="text-center">Antar barang</h4>
+                  <button class="btn btn-white btn-lg">
+                    <img src="http://kodekupon.com/wp-content/uploads/2015/07/logo6.png" style="width: 100%;">
+                  </button>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="ibox float-e-margins">
+              <div class="ibox-title">
+                  <h5>Top Best Price <small>Sabtu, 22 Agustus 2015</small></h5>
+              </div>
+              <div class="ibox-content" style="position: relative">
+                <div class="row">
+                  <div class="col-xs-12 text-right">
+                    <div class="btn-group" role="group" aria-label="Large button group">
+                      <button type="button" class="btn btn-white"><i class="fa fa-chevron-left"></i></button>
+                      <button type="button" class="btn btn-white"><i class="fa fa-chevron-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <h4>Daging Sapi Paha Belakang</h4>
+                    <div class="col-md-4">
+                      <img src="http://infopangan.jakarta.go.id/media/komoditas/daging-sapi-paha-belakang.png">
+                    </div>
+                    <div class="col-md-8">
+                      <b>Rp120.000/kg</b>
+                      <span class="label label-warning">BEST PRICE</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <h4>Daging Sapi Murni</h4>
+                    <div class="col-md-4">
+                      <img src="http://infopangan.jakarta.go.id/media/komoditas/daging-sapi-murni.png">
+                    </div>
+                    <div class="col-md-8">
+                      <b>Rp115.000/kg</b>
+                      <span class="label label-warning">BEST PRICE</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="ibox float-e-margins">
+              <div class="ibox-title">
+                  <h5>Harga Produk Lain &nbsp;<small>Sabtu, 22 Agustus 2015</small></h5>
+              </div>
+              <div class="ibox-content" style="position: relative">
+                <div class="row">
+                  <div class="col-xs-12 text-right">
+                    <div class="btn-group" role="group" aria-label="Large button group">
+                      <button type="button" class="btn btn-white"><i class="fa fa-chevron-left"></i></button>
+                      <button type="button" class="btn btn-white"><i class="fa fa-chevron-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-4">
+                    <h4>Cabe Merah Besar</h4>
+                    <div class="col-md-4">
+                      <img src="http://infopangan.jakarta.go.id/media/komoditas/cabe-merah-besar.png" style="width: 100%;">
+                    </div>
+                    <div class="col-md-8">
+                      <b>Rp35.000/kg</b><br>
+                      Harga Pasar<br>
+                      <span class="label label-danger">Rp34.000</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <h4>Daging Sapi Paha Belakang</h4>
+                    <div class="col-md-4">
+                      <img src="http://infopangan.jakarta.go.id/media/komoditas/daging-sapi-paha-belakang.png" style="width: 100%;">
+                    </div>
+                    <div class="col-md-8">
+                      <b>Rp120.000/kg</b><br>
+                      Harga Pasar<br>
+                      <span class="label label-primary">Rp140.000</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <h4>Daging Sapi Murni</h4>
+                    <div class="col-md-4">
+                      <img src="http://infopangan.jakarta.go.id/media/komoditas/daging-sapi-murni.png" style="width: 100%;">
+                    </div>
+                    <div class="col-md-8">
+                      <b>Rp110.000/kg</b><br>
+                      Harga Pasar<br>
+                      <span class="label label-primary">Rp115.000</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <h4>Ayam Broiler/Ras</h4>
+                    <div class="col-md-4">
+                      
+                      <img src="http://infopangan.jakarta.go.id/media/komoditas/ayam-broiler-ras.png" style="width: 100%;">
+                    </div>
+                    <div class="col-md-8">
+                      <b>Rp36.000/kg</b><br>
+                      Harga Pasar<br>
+                      <span class="label label-danger">Rp35.000</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <h4>Telur Ayam Ras</h4>
+                    <div class="col-md-4">
+                      <img src="http://infopangan.jakarta.go.id/media/komoditas/telur-ayam-ras.png" style="width: 100%;">
+                    </div>
+                    <div class="col-md-8">
+                      <b>Rp24.000/kg</b><br>
+                      Harga Pasar<br>
+                      <span class="label label-success">Rp24.000</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <h4>Gula Pasir</h4>
+                    <div class="col-md-4">
+                      <img src="http://infopangan.jakarta.go.id/media/komoditas/gula-pasir.png" style="width: 100%;">
+                    </div>
+                    <div class="col-md-8">
+                      <b>Rp13.000/kg</b><br>
+                      Harga Pasar<br>
+                      <span class="label label-success">Rp13.000</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <h4>Beras Medium</h4>
+                    <div class="col-md-4">
+                      <img src="http://infopangan.jakarta.go.id/media/komoditas/beras-medium.png" style="width: 100%;">
+                    </div>
+                    <div class="col-md-8">
+                      <b>Rp10.500/kg</b><br>
+                      Harga Pasar<br>
+                      <span class="label label-success">Rp10.500</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <h4>Beras Pera</h4>
+                    <div class="col-md-4">
+                      <img src="http://infopangan.jakarta.go.id/media/komoditas/beras-pera.png" style="width: 100%;">
+                    </div>
+                    <div class="col-md-8">
+                      <b>Rp12.000/kg</b><br>
+                      Harga Pasar<br>
+                      <span class="label label-success">Rp12.000</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <h4>Beras Premium</h4>
+                    <div class="col-md-4">
+                      <img src="http://infopangan.jakarta.go.id/media/komoditas/beras-premium.png" style="width: 100%;">
+                    </div>
+                    <div class="col-md-8">
+                      <b>Rp12.000/kg</b><br>
+                      Harga Pasar<br>
+                      <span class="label label-success">Rp12.000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+          <div>
+              <strong>Copyright</strong> Sabril Team &copy; 2014-2015
+          </div>
+      </div>
+
+      </div>
+    </div>
+    
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Morris -->
+    <script src="js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="js/plugins/morris/morris.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+</body>
+
+</html>

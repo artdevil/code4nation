@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | Morris.js Charts</title>
+    <title>Bulog Data Nasional</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -179,13 +179,23 @@
             <div class="col-md-8">
               <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>Jumlah Stok Sembako<small>&nbsp;Dalam Ton.</small></h5>
+                    <h5>Jumlah Komoditas Nasional<small>&nbsp;Dalam Ton.</small></h5>
                     <div class="ibox-tools">
                       <div class="btn-group">
-                        <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">Sulawesi Selatan <span class="caret"></span></button>
+                        <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">All <span class="caret"></span></button>
                         <ul class="dropdown-menu">
+                          <li><a href="#">Sulawesi Selatan</a></li>
                           <li><a href="#">Jawa Barat</a></li>
                           <li><a href="#">DKI Jakarta</a></li>
+                        </ul>
+                      </div>
+                      <div class="btn-group">
+                        <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">Beras Kelas I &nbsp;<span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Kelas II</a></li>
+                          <li><a href="#">Kelas III</a></li>
+                          <li><a href="#">Daging</a></li>
+                          <li><a href="#">stok</a></li>
                         </ul>
                       </div>
                     </div>
@@ -202,10 +212,12 @@
                   </h5>
                   <div class="ibox-tools">
                     <div class="btn-group">
-                      <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">Beras <span class="caret"></span></button>
+                      <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">Beras Kelas I &nbsp;<span class="caret"></span></button>
                       <ul class="dropdown-menu">
+                        <li><a href="#">Kelas II</a></li>
+                        <li><a href="#">Kelas III</a></li>
                         <li><a href="#">Daging</a></li>
-                        <li><a href="#">Ayam</a></li>
+                        <li><a href="#">stok</a></li>
                       </ul>
                     </div>
                   </div>
@@ -224,7 +236,7 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td><small>Jawa Barat</small></td>
+                            <td><small><a href="provinsi.html">Jawa Barat</a></small></td>
                             <td>100</td>
                             <td>30</td>
                             <td>400</td>
@@ -232,7 +244,7 @@
                             <td><span class="label label-success">Normal</span></td>
                         </tr>
                         <tr>
-                            <td><small>DKI Jakarta</small></td>
+                            <td><small><a href="provinsi.html">DKI Jakarta</a></small></td>
                             <td>1</td>
                             <td>100</td>
                             <td>80</td>
@@ -240,7 +252,7 @@
                             <td><span class="label label-warning">Warning</span></td>
                         </tr>
                         <tr>
-                            <td><small>Sulawesi Selatan</small></td>
+                            <td><small><a href="provinsi.html">Sulawesi Selatan</a></small></td>
                             <td>10</td>
                             <td>10</td>
                             <td>80</td>
@@ -263,25 +275,41 @@
                             <div class="feed-activity-list">
                               <div class="feed-element">
                                 <div class="media-body">
-                                  <small class="pull-right">5m ago</small>
+                                  <small class="pull-right">2m ago</small>
                                   <strong>Provinsi Jawa Barat</strong> <span class="text-navy">Surplus Beras</span><br>
-                                  <small class="text-muted">Today 5:60 pm - 12.06.2014</small>
+                                  <small class="text-muted">Today 7:60 pm - 22.08.2015</small>
                                 </div>
                               </div>
                               
                               <div class="feed-element">
                                 <div class="media-body">
-                                  <small class="pull-right">5m ago</small>
+                                  <small class="pull-right">4h ago</small>
                                   <strong>Provinsi Sulawesi Selatan</strong> <span class="text-danger">Gagal Panen</span><br>
-                                  <small class="text-muted">Today 5:60 pm - 12.06.2014</small>
+                                  <small class="text-muted">Today 5:60 pm - 22.08.2015</small>
                                 </div>
                               </div>
                               
                               <div class="feed-element">
                                 <div class="media-body">
-                                  <small class="pull-right">5m ago</small>
-                                  <strong>Provinsi DKI Jakarta</strong> <span class="text-warning">Minus Daging</span><br>
-                                  <small class="text-muted">Today 5:60 pm - 12.06.2014</small>
+                                  <small class="pull-right">4h ago</small>
+                                  <strong>Provinsi DKI Jakarta</strong> <span class="text-warning">Defisit Daging</span><br>
+                                  <small class="text-muted">Today 5:60 pm - 22.08.2015</small>
+                                </div>
+                              </div>
+                              
+                              <div class="feed-element">
+                                <div class="media-body">
+                                  <small class="pull-right">10h ago</small>
+                                  <strong>Kabupaten Bantaeng, Provinsi Sulawesi Selatan</strong> <span class="text-danger">Gagal Panen</span><br>
+                                  <small class="text-muted">Today 5:60 pm - 22.08.2015</small>
+                                </div>
+                              </div>
+                              
+                              <div class="feed-element">
+                                <div class="media-body">
+                                  <small class="pull-right">10h ago</small>
+                                  <strong>Kabupaten Jeneponto, Provinsi Sulawesi Selatan</strong> <span class="text-navy">Panen Raya</span><br>
+                                  <small class="text-muted">Today 5:60 pm - 22.08.2015</small>
                                 </div>
                               </div>
                             </div>
@@ -298,7 +326,7 @@
         </div>
         <div class="footer">
             <div>
-                <strong>Copyright</strong> Example Company &copy; 2014-2015
+                <strong>Copyright</strong> Sabril Team &copy; 2014-2015
             </div>
         </div>
 
@@ -323,25 +351,24 @@
 
     <!-- Morris demo data-->
     <script type="text/javascript">
-      Morris.Area({
+      Morris.Line({
           element: 'morris-area-chart',
-          data: [{ period: '2015-01-01', Beras: 2666, Daging: 1000, Ayam: 2647 },
-              { period: '2015-02-01', Beras: 2778, Daging: 2294, Ayam: 2441 },
-              { period: '2015-03-01', Beras: 4912, Daging: 1969, Ayam: 2501 },
-              { period: '2015-04-01', Beras: 3767, Daging: 3597, Ayam: 5689 },
-              { period: '2015-05-01', Beras: 6810, Daging: 1914, Ayam: 2293 },
-              { period: '2015-06-01', Beras: 5670, Daging: 4293, Ayam: 1881 },
-              { period: '2015-07-01', Beras: 4820, Daging: 3795, Ayam: 1588 },
-              { period: '2015-08-01', Beras: 15073, Daging: 5967, Ayam: 5175 },
-              { period: '2015-09-01', Beras: 10687, Daging: 4460, Ayam: 2028 },
-              { period: '2015-10-01', Beras: 8432, Daging: 5713, Ayam: 1791 } ],
+          data: [{ period: '2015-01', konsumsi: 2000, produksi: 1000, stok: 8000 },
+              { period: '2015-02', konsumsi: 2050, produksi: 1200, stok: 7500 },
+              { period: '2015-03', konsumsi: 2600, produksi: 1240, stok: 6500 },
+              { period: '2015-04', konsumsi: 2070, produksi: 1320, stok: 5436 },
+              { period: '2015-05', konsumsi: 2300, produksi: 1120, stok: 4653 },
+              { period: '2015-06', konsumsi: 2040, produksi: 3000, stok: 6300 },
+              { period: '2015-07', konsumsi: 5000, produksi: 4000, stok: 4300 },
+              { period: '2015-08', konsumsi: 2037, produksi: 1000, stok: 3520 },
+              { period: '2015-09', konsumsi: 2375, produksi: 1040, stok: 2028 }],
           xkey: 'period',
-          ykeys: ['Beras', 'Daging', 'Ayam'],
-          labels: ['Beras', 'Daging', 'Ayam'],
+          ykeys: ['konsumsi', 'produksi', 'stok'],
+          labels: ['Konsumsi', 'Produksi', 'Stok'],
           pointSize: 2,
           hideHover: 'auto',
           resize: true,
-          lineColors: ['#87d6c6', '#54cdb4','#1ab394'],
+          lineColors: ['red', 'blue','green'],
           lineWidth:2,
           pointSize:1,
           xLabelAngle: 45
